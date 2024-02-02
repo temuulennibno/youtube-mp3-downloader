@@ -15,7 +15,7 @@ export const downloadMp3 = async (id: string) => {
 
   try {
     const response = await axios.request(options);
-    return { response };
+    return { response: response.data };
   } catch (error: any) {
     return { error: error.response.data };
   }
