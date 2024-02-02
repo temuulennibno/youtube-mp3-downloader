@@ -1,12 +1,12 @@
 import axios from "axios";
 
-const API_KEY = process.env.REACT_APP_YOUTUBE_API_KEY;
+const API_KEY = process.env.API_KEY;
 
 export const downloadMp3 = async (id: string) => {
   const options = {
     method: "GET",
     url: "https://youtube-mp36.p.rapidapi.com/dl",
-    params: { id: "wTTjKB84SzY" },
+    params: { id },
     headers: {
       "X-RapidAPI-Key": API_KEY,
       "X-RapidAPI-Host": "youtube-mp36.p.rapidapi.com",
