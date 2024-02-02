@@ -2,7 +2,7 @@ import axios from "axios";
 
 const API_KEY = process.env.API_KEY;
 
-// API SOURCE https://rapidapi.com/420vijay47/api/youtube-mp3-downloader2
+// API SOURCE https://rapidapi.com/ytjar/api/youtube-mp36
 
 export const downloadMp3 = async (id: string) => {
   const options = {
